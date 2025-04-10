@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.conteudo {
+    width: 100%; /* largura de tudo*/
+    display: flex; /* permite alterar a poisão dos elementos na tela*/
+    justify-content: space-between; /* permite justificar / alinhar os componentes*/
+    align-items: center; /* permite alinhar os componentes na vertical*/
+}
+
+.caixatexto {
+    width: 600px;
+}
+
+.caixaimagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    color: #333; 
+    font-size: 60px;
+    font-weight: 500;
+}
+
+span {
+    color: #017143;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 16px; /* tamanho da fonte*/
+}
+
+button {
+    background: #017143;
+    /* fundo do elemento */
+    color: white;
+    /* cor do texto */
+    border-radius: 40px;
+    /* arredondamento da borda*/
+    border: none;
+    /* borda do elemento*/
+    cursor: pointer;
+    /* cursor do mouse*/
+    padding: 10px;
+    /* espaçamento interno*/
+    margin-top: 20px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.starbucks {
+    width: 300px;
+}
+
+.botão-menu {
+    width: 60px;
+    transition: 1s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.botão-menu:hover {
+    transform: translateY(-25px);
+}
+
+.circulo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#017143;
+    top: 0;
+    left:0;
+    clip-path: circle(450px at right 500px);
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .caixatexto,
+    .caixaimagem {
+        width: 100%; /* Deixa as caixas com 100% de largura em telas ainda menores */
+    }
+
+    h2 {
+        font-size: 40px; /* Reduz ainda mais o título */
+    }
+
+    span {
+        font-size: 50px; /* Reduz ainda mais o span */
+    }
+
+    p {
+        font-size: 12px; /* Reduz ainda mais o texto */
+    }
+
+    button {
+        width: 100%; /* Faz o botão ocupar toda a largura */
+        padding: 15px;
+    }
+
+    .botão-menu {
+        width: 40px; /* Ajusta o tamanho do botão de menu */
+    }
+
+    .logo {
+        width: 50px; /* Ajusta o tamanho do logo */
+    }
+
+    .starbucks {
+        width: 150px; /* Ajusta o tamanho da imagem do Starbucks */
+        margin-right: -35px;
+    }
+
+    .circulo {
+        position: absolute;
+        width: 106%;
+        height: 100%;
+        background: #017143;
+        top: 0;
+        left: 0;
+        clip-path: circle(295px at right 282px);
+        z-index: -1;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+    .caixatexto,
+    .caixaimagem {
+        width: 100%; /* As caixas ocupam toda a largura da tela em dispositivos muito pequenos */
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 30px; /* Reduz ainda mais o título */
+    }
+
+    span {
+        font-size: 40px; /* Reduz ainda mais o span */
+    }
+
+    p {
+        font-size: 10px; /* Reduz ainda mais o texto */
+    }
+
+    button {
+        padding: 10px; /* Ajusta o padding do botão */
+    }
+
+    .botão-menu {
+        width: 30px; /* Ajusta o tamanho do botão de menu */
+    }
+
+    .logo {
+        width: 40px; /* Ajusta o tamanho do logo */
+    }
+
+    .starbucks {
+        width: 120px; /* Ajusta o tamanho da imagem do Starbucks */
+        margin-right: -12px;
+    }
+
+    .circulo {
+        position: absolute;
+        width: 121%;
+        height: 100%;
+        background: #017143;
+        top: 0;
+        left: 0;
+        clip-path: circle(213px at right 242px);
+        z-index: -1;
+    }
+}
